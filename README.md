@@ -1,3 +1,4 @@
+> **Portfolio Project:** Sofra is a fictional Turkish restaurant website created to demonstrate frontend web development skills.
 # Sofra — Turkish Restaurant Website
 
 A modern and responsive Turkish restaurant website inspired by Turkish culture, hospitality, and fine dining.
