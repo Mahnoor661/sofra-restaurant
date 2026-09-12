@@ -4,7 +4,7 @@
 A modern and responsive Turkish restaurant website inspired by Turkish culture, hospitality, and fine dining.
 ## Website Preview
 
-![Sofra Website Preview](sofra-homepage.png)
+![Sofra Website Preview](images/sofra-homepage.png)
 ## Features
 
 - Elegant Turkish-inspired design
