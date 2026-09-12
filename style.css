@@ -1,0 +1,743 @@
+/* =========================
+   SOFRA — GLOBAL STYLES
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f7f1e5;
+    color: #24201e;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+header {
+    background-color: #fffdf8;
+    border-bottom: 1px solid #e5dccb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(36, 32, 30, 0.06);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: Playfair Display, serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #7a263a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav ul a {
+    font-size: 15px;
+    color: #24201e;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #7a263a;
+}
+
+.reservation-btn {
+    background-color: #7a263a;
+    color: #fffdf8;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-btn:hover {
+    background-color: #5f1d2d;
+     transform: translateY(-2px);
+}
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: linear-gradient(rgba(36, 32, 30, 0.55), rgba(36, 32, 30, 0.55)),
+                      url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fffdf8;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    color: #fffdf8;
+}
+
+.eyebrow {
+    color: #7a263a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.05;
+    color: #fffdf8;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    color: #fffdf8;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #7a263a;
+    color: #fffdf8;
+}
+
+.primary-btn:hover {
+    background-color: #5f1d2d;
+}
+
+.secondary-btn {
+    border: 1px solid #7a263a;
+    color: #7a263a;
+}
+
+.secondary-btn:hover {
+    background-color: #7a263a;
+    color: #fffdf8;
+}
+/* =========================
+   SIGNATURE DISHES
+   ========================= */
+
+.signature-dishes {
+    padding: 100px 40px;
+    background-color: #fffdf8;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.section-heading > p:last-child {
+    color: #625b55;
+}
+
+.dish-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.dish-card {
+    background-color: #f7f1e5;
+    border: 1px solid #e5dccb;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(36, 32, 30, 0.10);
+}
+
+.dish-image {
+    height: 260px;
+    overflow: hidden;
+    background-color: #e5dccb;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.dish-card:hover .dish-image img {
+    transform: scale(1.05);
+}
+
+.dish-info {
+    padding: 25px;
+}
+
+.dish-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.dish-info p {
+    color: #625b55;
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.price {
+    color: #7a263a;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+/* =========================
+   OUR STORY
+   ========================= */
+
+.our-story {
+    padding: 110px 40px;
+    background-color: #f7f1e5;
+}
+
+.story-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+.story-content::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #7a263a;
+    margin: 0 auto 18px;
+}
+
+.story-content h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.story-content p {
+    color: #625b55;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.story-content .secondary-btn {
+    margin-top: 15px;
+}
+/* =========================
+   GALLERY
+   ========================= */
+
+.gallery {
+    padding: 100px 40px;
+    background-color: #fffdf8;
+}
+
+.gallery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e5dccb;
+    color: #625b55;
+    font-size: 14px;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+/* =========================
+   REVIEWS
+   ========================= */
+
+.reviews {
+    padding: 100px 40px;
+    background-color: #7a263a;
+    color: #fffdf8;
+}
+
+.reviews .eyebrow {
+    color: #e5dccb;
+}
+
+.reviews .section-heading h2 {
+    color: #fffdf8;
+}
+
+.review-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+     align-items: stretch;
+}
+
+.review-card {
+    padding: 35px;
+    border: 1px solid rgba(255, 253, 248, 0.25);
+     border-radius: 8px;
+}
+
+.review-text {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.review-card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #e5dccb;
+}
+/* =========================
+   CONTACT & RESERVATION
+   ========================= */
+
+.contact {
+    padding: 100px 40px;
+    background-color: #f7f1e5;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.contact-info h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #625b55;
+    margin-bottom: 25px;
+}
+.contact-info {
+    padding: 30px 0;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reservation-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    letter-spacing: 0.3px;
+    color: #625b55;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d6cbbb;
+    background-color: #fffdf8;
+    color: #24201e;
+    outline: none;
+    border-radius: 4px;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+    border-color: #7a263a;
+     box-shadow: 0 0 0 3px rgba(122, 38, 58, 0.1);
+}
+
+.reservation-form button {
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #7a263a;
+    color: #fffdf8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    transform: translateY(-2px);
+    background-color: #5f1d2d;
+}
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    background-color: #24201e;
+    color: #fffdf8;
+    padding: 70px 40px 25px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #e5dccb;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #c9c1ba;
+}
+
+.footer h3 {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #c9c1ba;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #fffdf8;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #4a4542;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #a9a19b;
+    font-size: 13px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 18px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .reservation-btn {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .signature-dishes,
+    .our-story,
+    .gallery,
+    .reviews,
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    .dish-container,
+    .review-container,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .footer {
+        padding: 60px 20px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+.hero .eyebrow {
+    color: #fffdf8;
+}
+
+.hero .secondary-btn {
+    color: #fffdf8;
+    border-color: #fffdf8;
+}
+nav ul a {
+    position: relative;
+}
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #7a263a;
+    transition: width 0.3s ease;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+.dish-card {
+    border-radius: 8px;
+}
+
+.dish-image img {
+    transition: transform 0.4s ease;
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.05);
+}
+.signature-dishes .section-heading::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #7a263a;
+    margin: 0 auto 18px;
+}
+.our-story {
+    border-top: 1px solid #e5dccb;
+    border-bottom: 1px solid #e5dccb;
+}
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(36, 32, 30, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+.review-card {
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 253, 248, 0.08);
+}
+.reservation-form {
+    background-color: #fffdf8;
+    padding: 30px;
+    border: 1px solid #e5dccb;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(36, 32, 30, 0.08);
+}
+.reservation-form input:focus,
+.reservation-form select:focus {
+    border-color: #7a263a;
+    box-shadow: 0 0 0 3px rgba(122, 38, 58, 0.1);
+}
+.reservation-form button {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    transform: translateY(-2px);
+    background-color: #5f1d2d;
+}
+.footer-social a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #e5dccb;
+    transform: translateX(4px);
+}
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    color: #e5dccb;
+    font-weight: 700;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #e5dccb;
+    transform: translateX(4px);
+}
+#backToTop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #7a263a;
+    color: #fffdf8;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(36, 32, 30, 0.2);
+    z-index: 999;
+}
+#backToTop:hover {
+    background-color: #5f1d2d;
+    transform: translateY(-3px);
+}
